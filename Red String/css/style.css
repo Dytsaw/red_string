@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'Bahnschrift';
+    src: url(../fonts/BAHNSCHRIFT.TTF);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Bahnschrift', Georgia, Arial;
+}
+
+/* ----------------- Début du Header -------------- */
+
+header button{
+    font-family: 'Bahnschrift';
+    font-size: 20px;
+}
+
+button a{
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    padding: 0px 148px 0px 148px;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+header ul{
+    display: flex;
+    list-style-type: none;
+}
+
+header img{
+    width: 200px;
+}
+
+nav {
+    display: flex;
+    width: 1000px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn_nav a{
+    color: #4b4949;
+    padding-left: 88px;
+    text-decoration: none;
+}
+
+.donate_btn{
+    padding: 10px;
+    box-sizing: border-box;
+    border: solid 2px #51ade5;
+    background-color: #51ade5;
+    border-radius: 100px;
+    box-shadow: 3px 3px 5px #51ade5;
+
+}
+
+.donate_btn a{
+    color: #fff;
+}
+
+/* -------------------------- Début du main ------------------- */
+
+.main_container{
+    height: 77vh ;
+    background-image: url(../images/homepage_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container_issue{
+    width: 535px;
+    height: 400px;
+    display: flex;
+    flex-flow: wrap;
+    font-size: 25px;
+    background-color: #f4f4f4;
+}
+
+.container_issue p{
+    font-size: 44px;
+}
+
+
+.container_issue a{
+    font-size: 16px;
+}
+
+.container_issue fieldset{
+    border: none;
+}
+
+.container_slogan{
+    width: 520px;
+    height: 225px;
+}
+
+.container_slogan h1{
+    font-size: 50px;
+    color: #fff;
+}
+
+.container_issue legend{
+    border: solid 3px #bc986a;
+    background-color: #bc986a;
+    color: #fff;
+}
+
