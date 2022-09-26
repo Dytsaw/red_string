@@ -5,18 +5,18 @@
 
 *{
     margin: 0;
-    padding: 0;
+    padding:0px;
 }
 
 body{
     font-family: 'Bahnschrift', Georgia, Arial;
 }
 
-/* ----------------- Début du Header -------------- */
+/* ------------------------------------------------------------------- Début du Header -------------- */
 
 header button{
     font-family: 'Bahnschrift';
-    font-size: 20px;
+    font-size: 16px;
 }
 
 button a{
@@ -28,7 +28,8 @@ header{
     align-items: center;
     padding: 0px 148px 0px 148px;
     justify-content: space-between;
-    font-size: 20px;
+    font-size: 16px;
+    height: 128px;
 }
 
 header ul{
@@ -43,14 +44,21 @@ header img{
 nav {
     display: flex;
     width: 1000px;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 .btn_nav a{
     color: #4b4949;
     padding-left: 88px;
-    text-decoration: none;
+    text-decoration: underline 0px #fff;
+    transition: text-decoration-color 300ms;
+
+}
+
+.btn_nav a:hover{
+    text-decoration: underline 2px;
+    text-decoration-color: #4b4949;
 }
 
 .donate_btn{
@@ -61,16 +69,24 @@ nav {
     border-radius: 100px;
     box-shadow: 3px 3px 5px #51ade5;
 
+
+}
+
+.donate_btn a:hover{
+    text-shadow: 2px 2px 6px #fff;
+    border: solid 2px #51ade5;
+    background-color: #51ade5;
+    box-shadow: 3px 3px 5px #51ade5;
 }
 
 .donate_btn a{
     color: #fff;
 }
 
-/* -------------------------- Début du main ------------------- */
+/* -------------------------------------------------------------------- Début de la home Page ------------------- */
 
 .main_container{
-    height: 77vh ;
+    height: 80vh ;
     background-image: url(../images/homepage_bg.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -83,22 +99,51 @@ nav {
     width: 535px;
     height: 400px;
     display: flex;
-    flex-flow: wrap;
     font-size: 25px;
     background-color: #f4f4f4;
+    box-shadow: 1px 1px 10px #f4f4f4;
+}
+
+
+.container_issue fieldset{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    position: relative;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
 }
 
 .container_issue p{
     font-size: 44px;
+    color: #4b4949;
+    padding-top: 60px;
 }
 
 
 .container_issue a{
     font-size: 16px;
+    color: #4b4949;
+    padding-top:60px;
 }
 
-.container_issue fieldset{
-    border: none;
+.container_issue a:hover{
+    text-shadow: 0px 1px 2px #4b4949;
+}
+
+.issue_btn{
+    position: absolute;
+    bottom: 380px;
+    text-transform: uppercase;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 0px 2px 6px #4b4949;
+    left:205px;
+
 }
 
 .container_slogan{
@@ -115,5 +160,222 @@ nav {
     border: solid 3px #bc986a;
     background-color: #bc986a;
     color: #fff;
+}
+
+/* ------------------------------------------------------------- Debut de la section Take Action -------------------------------- */
+
+.take_action{
+    display: flex;
+    height: 300px;
+    color: #4b4949;
+    padding: 0px 125px 0px 125px;
+}
+
+.take_action fieldset{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    position: relative;
+    border-style: none;
+}
+
+.take_action legend{
+    text-align: center;
+    border: solid #bc986a;
+    background-color: #bc986a;
+    position: absolute;
+    bottom:280px;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fff;
+    box-shadow: 0px 2px 6px #4b4949;
+
+}
+
+
+.take_action_p{
+    width: 260px;
+}
+
+.take_action p{
+    padding-top: 20px;
+}
+
+/* ------------------------------------------------------ Debut de la section Nos Projets ------------------------------ */
+
+.projects{
+    height: 1400px;
+    background-color: #f4f4f4;
+    position: relative;
+}
+
+.projects h1{
+    margin-top:100px ;
+    margin-left: 170px;
+    position: absolute;
+    border: solid #51ade5;
+    color: #fff;
+    background-color: #51ade5;
+    box-shadow: 0px 2px 6px #4b4949;
+    padding: 5px;
+}
+
+.projects h2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 300px 125px 250px 125px;
+    font-size: 45px;
+
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap row;
+}
+
+.card img{
+    width: 300px;
+    padding-bottom: 13px;
+
+}
+.card{
+    height: 650px;
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 2px 2px 10px #4b4949;
+    color: #4b4949;
+}
+
+.card-body{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card-body h3{
+    font-size: 28px;
+}
+
+.card p{
+    width: 200px;
+    line-height: 2em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 20px 0px 30px 0px;
+}
+
+.card-link{
+    display: flex;
+    width: 100px;
+    justify-content: center;
+    
+}
+
+.card a{
+    text-decoration: none;
+    color: #fff;
+    border: solid #51ade5;
+    border-radius: 50px;
+    padding: 5px;
+    background-color: #51ade5;
+    box-shadow: 0px 3px 6px #51ade5;
+}
+
+/* -------------------------------------------------------- Début du Footer ----------------------------------- */
+
+
+/* -------------------------------------------------------Section Newsletter ----------------------------------- */
+
+.newsletter{
+    height: 210px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 0px 60px 0px;
+    background-color: #51ade5;
+    align-items: center;
+}
+
+.newsletter p{
+    width: 550px;
+    font-size: 28px;
+    color: #fff;
+    
+}
+
+.newsletter input {
+    height: 40px;
+    width: 400px;
+    border-radius: 50px;
+    border-style: none;
+}
+
+.newsletter input::placeholder{
+    text-align: center;
+    font-family: 'Bahnschrift';
+    color: #4b4949;
+    font-size: 16px;
+}
+
+
+.newsletter button{
+    width: 150px;
+    padding: 10px 0px 10px 0px;
+    border-radius: solid 50px #fff;
+    background-color: #fff;
+    border-style: none;
+    border-radius: 50px;
+    box-shadow: 1px 1px 3px #fff;
+    font-family: 'Bahnschrift';
+    font-size: 16px;
+}
+
+
+/* ----------------------------------------------------------- Section Information --------------------------------------- */
+
+.information{
+    height: 340px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #4b4949;
+}
+
+
+.footer_devise{
+    font-weight: bold;
+}
+
+.link_footer p{
+    padding-top: 10px;
+}
+
+.information ul{
+    list-style-type: none;
+}
+
+.information ul li{
+    padding-bottom: 10px;
+}
+
+.information h5{
+    padding-bottom: 10px;
+    text-decoration: underline;
+}
+
+.information hr{
+    width: 200px;
+    margin-top: 5px;
+}
+
+.slogan_footer{
+    width: 150px;
+    font-size: 30px;
+    color: #4b4949
 }
 
