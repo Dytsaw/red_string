@@ -14,8 +14,8 @@
         <nav>
         <ul>
             <li class="btn_nav"><a href="#">Nos projets</a></li>
-            <li class="btn_nav"><a href="#">Notre histoire</a></li>
-            <li class="btn_nav"><a href="#">Les chiffres</a></li>
+            <li class="btn_nav"><a href="#">Le Saviez-Vous</a></li>
+            <li class="btn_nav"><a href="#">Nos Histoires</a></li>
             <li class="btn_nav"><a href="#">Mon profil</a></li>
         </ul>
         <button class="donate_btn"><a href="#">Faites un Don</a></button>
@@ -26,8 +26,8 @@
             <section class="container_issue">
                 <fieldset>
                     <legend class="issue_btn">La Solution</legend>
-                    <p>Climate change poses the biggest threat to women in developing</p>
-                    <p><a href="#">Read more about this environemental and social cause</a></p>
+                    <p>Tavailler avec HARPIE pour fournir des repas aux enfants pauvre dans le monde</p>
+                    <span><a href="#">En savoir plus à propos de notre solution</a></span>
                 </fieldset>
             </section>
             <section class="container_slogan">
@@ -54,9 +54,11 @@
                         <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, numquam.</p>
                     </div>
                 </fieldset>
-            </section>
+        </section>
             <section class="projects">
+                <div class="section_title">
                 <h1>NOS PROJETS</h1>
+                </div>
                 <h2>Our mission is to create sustainable work for women in developing nations while 
                     helping to slow climate change.</h2>
                 <section class="cards">
@@ -90,8 +92,12 @@
     <footer>
         <section class="newsletter">
             <p>Subscribe to our monthly newsletter and stay up to date with all news and events.</p>
-            <input type="mail" name="mail_new" placeholder="Enter your email adress">
-            <label for="mail_new"><button>Send</button></label>
+            <form action="traitement.php" method="post">
+            <input type="mail" name="mail_new" placeholder="Enter your email adress" id="mailto">
+            <div class="button_submit">
+            <input type="submit" value="Send">
+            </div>
+            </form>
         </section>
 
         <section class="information">
@@ -135,7 +141,7 @@
                 </ul>
             </div>
             <div class="slogan_footer">
-                <p>#Stop climate change</p>
+                <p>#Ensemble, construisons un monde meilleur</p>
             </div>
         </section>
     </footer>
